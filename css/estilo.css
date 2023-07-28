@@ -8,6 +8,10 @@
 	border-bottom: 1px solid #e5e5e5;
 }
 
-footer p a {
-	margin: 5px 15px;
+.footer-logos{
+	float: right;
 }
+
+img {
+	border-radius: 8px;
+  }
