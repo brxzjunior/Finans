@@ -1,24 +1,29 @@
-<html lang="pt-br">
-  <head>
-    <!-- Meta tags Obrigatórias -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Finans - Login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
 
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-    <!-- Estilo customizado -->
-    <link rel="stylesheet" type="text/css" href="css/estilo.css">
-
-    <title>Finans - Login</title>
-  </head>
-  <body>
-    
-    <!--início cabecalho-->
+	    <!--início cabecalho-->
     <header>
       <nav class="navbar navbar-expand-sm navbar-light bg-warning">
         <div class="container">
@@ -52,69 +57,87 @@
       </nav>
     </header>
     <!--fim cabecalho-->
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-pic js-tilt" data-tilt>
+					<img src="images/img-01.png" alt="IMG">
+				</div>
 
-<!-- Seção de Login/Register -->
-<section id="login" class="caixa">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-header bg-warning text-white">
-            <h3>Login / Registro</h3>
-          </div>
-          <div class="card-body">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-              <li class="nav-item">
-                <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login-form" role="tab" aria-controls="login-form" aria-selected="true">Login</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="register-tab" data-toggle="tab" href="#register-form" role="tab" aria-controls="register-form" aria-selected="false">Registro</a>
-              </li>
-            </ul>
-            <div class="tab-content" id="myTabContent">
-              <!-- Login Form -->
-              <div class="tab-pane fade show active" id="login-form" role="tabpanel" aria-labelledby="login-tab">
-                <form>
-                  <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Digite seu email">
-                  </div>
-                  <div class="form-group">
-                    <label for="password">Senha</label>
-                    <input type="password" class="form-control" id="password" placeholder="Digite sua senha">
-                  </div>
-                  <button type="submit" class="btn btn-warning btn-block">Entrar</button>
-                </form>
-              </div>
-              <!-- Register Form -->
-              <div class="tab-pane fade" id="register-form" role="tabpanel" aria-labelledby="register-tab">
-                <form>
-                  <div class="form-group">
-                    <label for="register-email">Email</label>
-                    <input type="email" class="form-control" id="register-email" placeholder="Digite seu email">
-                  </div>
-                  <div class="form-group">
-                    <label for="register-password">Senha</label>
-                    <input type="password" class="form-control" id="register-password" placeholder="Digite sua senha">
-                  </div>
-                  <button type="submit" class="btn btn-warning btn-block">Registrar</button>
-                </form>
-              </div>
-            </div>
-          </div>
+				<form class="login100-form validate-form">
+					<span class="login100-form-title">
+						Member Login
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input100" type="text" name="email" placeholder="Email">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<input class="input100" type="password" name="pass" placeholder="Password">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+					
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Login
+						</button>
+					</div>
+
+					<div class="text-center p-t-12">
+						<span class="txt1">
+							Forgot
+						</span>
+						<a class="txt2" href="#">
+							Username / Password?
+						</a>
+					</div>
+
+					<div class="text-center p-t-136">
+						<a class="txt2" href="#">
+							Create your Account
+							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<footer>
+        <!-- BJ -->
+        <div>
+          Developed by
+          <a href="https://github.com/brxzjunior">Braz Junior</a>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Fim da Seção de Login/Register -->
+        <!-- BJ end -->
+      </footer>
 
-<!-- ... (código do rodapé) ... -->
+	
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
 
-<!-- JavaScript (Opcional) -->
-<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
